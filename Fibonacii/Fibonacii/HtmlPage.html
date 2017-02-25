@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div align="center">
+        <h3>Get Fibonacii numbers</h3>
+        <input id="num" type="number" placeholder="Input number" /><br />
+        <input type="button" value="Calculate" onclick="Fibonacii()" />
+    </div>
+    <script>
+    function Fibonacii()
+    {
+        var sum = 2;
+        var preprevious = 1;
+        var previous = 1;
+        var current;
+        var str = "1 1 ";
+        var k = document.getElementById('num');
+        if (k.value >1) {
+            for (var i = 2; i <= k.value; i++) {
+                current = preprevious + previous;
+                str += current + " ";
+                sum += current;
+                preprevious = previous;
+                previous = current;
+
+            }
+        }
+        else
+            if (k.value == 0)
+            {
+                str = "1";
+                sum = 1;
+            }
+
+        alert(str+"\n"+sum);
+    }
+
+    </script>
+</body>
+</html>
