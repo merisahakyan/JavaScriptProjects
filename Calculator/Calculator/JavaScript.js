@@ -4,9 +4,9 @@
     document.getElementById("text").value = eval(document.getElementById("text").value);
 }
 function getSymbols1() {
-    
 
-    document.getElementById("text").value = document.getElementById("text").value+"1";
+
+    document.getElementById("text").value = document.getElementById("text").value + "1";
 }
 function getSymbols2() {
 
