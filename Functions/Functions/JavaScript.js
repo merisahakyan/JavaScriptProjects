@@ -5,3 +5,16 @@
     }
     return sum;
 }
+function NewMassive(x)
+{
+   
+    var B = [];
+   
+    for(var i=0;i<x.length;i++)
+    {
+      //  B[i] = (x[i][i] + x[i][x.length - i - 1]) / 2;
+        alert((x[i][i] + x[i][x.length - i - 1]) / 2);
+    }
+    
+    
+}
